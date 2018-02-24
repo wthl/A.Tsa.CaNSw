@@ -13,8 +13,8 @@ body {
 	height: 1500px;
 }
 
-/* -------------------- NAVIGATION TOP max-width: 1345px -------------------- */
-@media only screen and (max-width: 1345px) {
+/* -------------------- NAVIGATION TOP max-width: 1385px -------------------- */
+@media only screen and (max-width: 1385px) {
   .hide-on-med-and-down {
     display: none !important;
   }
@@ -37,8 +37,16 @@ a.first-nav-link {
 		color: #555555;
 }
 
+/* -Выезжающая навигация сверху- */
+.side-nav {
+	width: 250px;
+
+}
 .side-nav li > a {
   font-size: 18px;
   font-weight: bold;
+}
+p.side-navigation {
+	height: 100px;
 }
 
