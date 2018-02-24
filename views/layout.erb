@@ -7,7 +7,7 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       
       <!--Import Fonts-->
-      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Amatic+SC" />
+      <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Lato|Open+Sans" rel="stylesheet"> 
 
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="/css/materialize.min.css"  media="screen,projection"/>
@@ -21,16 +21,28 @@
 	</head>
 	
 	<body>
-			
-     	<div>
-			  <%if @error && @error.length > 0 then %>
-				  <div class="alert alert-danger"><%=@error%></div>
-			    <% end %>
-			    <%= yield %>
-			</div>
 
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse first-nav brand-logo center"><i class="material-icons">menu</i></a>
+        <ul class="brand-logo center hide-on-med-and-down">
+          <li><a href="#" class="first-nav">Обо мне</a></li>
+          <li><a href="#" class="first-nav">О заказе и оплате</a></li>
+          <li><a href="#" class="first-nav">Блог</a></li>
+          <li><a href="#" class="first-nav">Контакты</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="#">Обо мне</a></li>
+          <li><a href="#">О заказе и оплате</a></li>
+          <li><a href="#">Блог</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+    </nav>
 
-
+    <div>
+      <%= yield %>
+    </div>
 
   	<!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="/vendor/jquery-3.2.0.min.js"></script>
