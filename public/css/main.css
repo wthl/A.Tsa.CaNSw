@@ -3,14 +3,25 @@ font-family: 'Amatic SC', cursive;
 font-family: 'Lato', sans-serif;
 font-family: 'Open Sans', sans-serif;
 */
+
+/* -------------------- BASIC shit -------------------- */
 html{
 
 }
 
 body {
-
+	height: 1500px;
 }
 
+/* -------------------- NAVIGATION TOP max-width: 1345px -------------------- */
+@media only screen and (max-width: 1345px) {
+  .hide-on-med-and-down {
+    display: none !important;
+  }
+  nav a.button-collapse {
+  display: block !important;
+	}
+}
 
 nav {
 	font-family: Amatic SC;
@@ -20,23 +31,14 @@ nav {
 nav .brand-logo {
   color: #555555;
 }
-nav .button-collapse {
-  float: center;
-}
 
-
-.side-nav li > a {
-  color: rgba(0, 0, 0, 0.87);
-  display: block;
-  font-size: 25px;
-  font-weight: 500;
-  height: 48px;
-  line-height: 48px;
-  padding: 0 32px;
-}
-
-
-a.first-nav {
-		font-size: 65%;
+a.first-nav-link {
+		font-size: 60%;
 		color: #555555;
 }
+
+.side-nav li > a {
+  font-size: 18px;
+  font-weight: bold;
+}
+
