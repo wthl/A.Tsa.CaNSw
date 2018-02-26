@@ -6,15 +6,16 @@ font-family: 'Open Sans', sans-serif;
 
 /* -------------------- BASIC shit -------------------- */
 html{
-
+	min-height: 100%;
 }
 
 body {
+	background: #ffffff;
 	height: 1500px;
 }
 
 /* -------------------- NAVIGATION TOP max-width: 1385px -------------------- */
-@media only screen and (max-width: 1385px) {
+@media only screen and (max-width: 1515px) {
   .hide-on-med-and-down {
     display: none !important;
   }
@@ -26,27 +27,50 @@ body {
 nav {
 	font-family: Amatic SC;
 	font-weight: bold;
-	background: #FFFFFF;
+	background: #ffffff;
 }
 nav .brand-logo {
-  color: #555555;
+  color: #65737e;
 }
 
 a.first-nav-link {
 		font-size: 60%;
-		color: #555555;
+		color: #65737e;
+		letter-spacing: 2px;
 }
 
 /* -Выезжающая навигация сверху- */
 .side-nav {
 	width: 250px;
-
 }
 .side-nav li > a {
   font-size: 18px;
   font-weight: bold;
+  letter-spacing: 2px;
 }
 p.side-navigation {
 	height: 100px;
 }
 
+/* -------------------- NAVIGATION TOP max-width: 1385px -------------------- */
+div.free-space-top {
+	height: 96px;
+}
+
+div.my-logo {
+		background-image: linear-gradient(20deg, #65737e, #b6bcc9);
+		vertical-align: bottom;
+		border: 5px solid #343d46;
+}
+div.cakes-and-sweets {
+		font-family: Open Sans Condensed;
+		font-size: 45%;
+		letter-spacing: 10px;
+}
+a.my-logo {
+		font-family: Amatic SC;
+		font-size: 280%;
+		text-shadow: 2px 2px 2px #cccccc;
+		color: #ffffff;
+		letter-spacing: 10px;
+}
