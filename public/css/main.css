@@ -57,22 +57,28 @@ div.free-space-top {
 	height: 64px;
 }
 
+/* -------------------- LOGO GOES HERE -------------------- */
 div.my-logo {
 background-image: linear-gradient(20deg, #FCA5F1, #B5FFFF);
 		vertical-align: bottom;
-		border: 2px solid #343d46;
+		border: 5px solid #343d46;
 		box-shadow: 4px 4px 10px 1px #dadde2;
 }
 a.my-logo {
 		font-family: Amatic SC;
-		font-size: 250%;
+		font-size: 350%;
 		text-shadow: 1px 1px 2px #65737e;
-		color: #4f5b66;
+		color: #343d46;
 		letter-spacing: 10px;
 }
 div.cakes-and-sweets {
 		font-family: Annie Use Your Telescope;
-		font-size: 40%;
+		font-size: 35%;
 		letter-spacing: 10px;
 		text-shadow: none;
+}
+
+/* -------------------- Social icons -------------------- */
+fa-telegram-plane {
+	color: #343d46;
 }
