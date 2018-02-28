@@ -15,7 +15,7 @@ body {
 }
 
 /* -------------------- NAVIGATION TOP max-width: 1385px -------------------- */
-@media only screen and (max-width: 1515px) {
+@media only screen and (max-width: 1550px) {
   .hide-on-med-and-down {
     display: none !important;
   }
@@ -40,11 +40,6 @@ a.first-nav-link {
 }
 
 /* -------------------- NAVIGATION SHOP max-width: 1385px -------------------- */
-.z-depth-0 {
-  box-shadow: none !important;
-  z-index: 0 !important;
-}
-
 .sticky-content.fixed{
   position: fixed;
   top: 0;
@@ -108,7 +103,7 @@ div.cakes-and-sweets {
 }
 a.rus-eng {
 		font-family: Amatic SC;
-		font-size: 90%;
+		font-size: 100%;
 		letter-spacing: 10px;
 		text-shadow: none;
 		color: #343d46;
@@ -118,6 +113,10 @@ a.rus-eng:hover {
 	text-shadow: 1px 1px 2px 1px #65737e;
 }
 a.rus-eng:active { 
+	color: #FFFFFF;
+	text-shadow: 1px 1px 2px 1px #65737e;
+	}
+a.rus-eng.active { 
 	color: #FFFFFF;
 	text-shadow: 1px 1px 2px 1px #65737e;
 	}

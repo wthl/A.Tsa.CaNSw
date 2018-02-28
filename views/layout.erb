@@ -10,7 +10,7 @@
       <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
             
       <!--Import Fonts-->
-      <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Lato|Open+Sans|Annie+Use+Your+Telescope" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Lato|Open+Sans|Amatic SC" rel="stylesheet">
 
       <!--Import materialize.css         &#8195;&#8195;-->
       <link type="text/css" rel="stylesheet" href="/css/materialize.min.css"  media="screen,projection"/>
@@ -29,69 +29,20 @@
       <div class="nav-wrapper">
         <a href="#" data-activates="mobile-demo" class="button-collapse brand-logo center"><i class="material-icons">menu</i></a>
         <ul class="brand-logo center hide-on-med-and-down">
-          <li><a href="#" class="first-nav-link">&#8195;&#8195;Блог&#8195;&#8195;</a></li>
-          <li><a href="#" class="first-nav-link">&#8195;&#8195;Галерея&#8195;&#8195;</a></li>
-          <li><a href="#" class="first-nav-link">&#8195;&#8195;Доставка и оплата&#8195;&#8195;</a></li>
-          <li><a href="#" class="first-nav-link">&#8195;&#8195;Контакты&#8195;&#8195;</a></li>
+          <li><a href="#" class="first-nav-link">&#8195;&#8195;<%= @default_language == 'rus' ? 'Блог' : 'Blog' %>&#8195;&#8195;</a></li>
+          <li><a href="#" class="first-nav-link">&#8195;&#8195;<%= @default_language == 'rus' ? 'Галерея' : 'Gallery' %>&#8195;&#8195;</a></li>
+          <li><a href="#" class="first-nav-link">&#8195;&#8195;<%= @default_language == 'rus' ? 'Доставка и оплата' : 'Delivery and Payment' %>&#8195;&#8195;</a></li>
+          <li><a href="#" class="first-nav-link">&#8195;&#8195;<%= @default_language == 'rus' ? 'Контакты' : 'Contacts' %>&#8195;&#8195;</a></li>
         </ul>
         <ul class="side-nav" id="mobile-demo">
           <p class="side-navigation"></p>
-          <li><a href="#">Блог</a></li>
-          <li><a href="#">Галерея</a></li>
-          <li><a href="#">Доставка и оплата</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li><a href="#"><%= @default_language == 'rus' ? 'Блог' : 'Blog' %></a></li>
+          <li><a href="#"><%= @default_language == 'rus' ? 'Галерея' : 'Gallery' %></a></li>
+          <li><a href="#"><%= @default_language == 'rus' ? 'Доставка и оплата' : 'Delivery and Payment' %></a></li>
+          <li><a href="#"><%= @default_language == 'rus' ? 'Контакты' : 'Contacts' %></a></li>
         </ul>
       </div>
     </nav>
-
-    <div class="free-space-top"></div>
-
-    <div class="container" align="center">
-      <div class="row" align="center">
-        <div class="col s12 m6 l6 xl6 offset-m3 offset-l3 offset-xl3 my-logo">
-          <div class="row"></div>
-          <div class="row"></div>
-
-          <a href="/" class="my-logo">
-            <div class="row">
-              <div class="container">АЛЕКСАНДРА ЦАРЁВА</div>
-            </div>
-            <div class="row">
-              <div class="container cakes-and-sweets">cakes & sweets</div>
-            </div>
-          </a>
-          <div class="row free-space-logo"></div>
-          <div class="row">
-            <div class="container">
-              <a href="#" class="rus-eng" title="Русский язык">рус</a>
-               / 
-              <a href="#" class="rus-eng" title="English language">eng</a>
-            </div>
-          </div>
-            
-          <div class="row free-space-logo"></div>
-          
-          <div class="row">
-            <div class="container">
-              <div class="col s1 m1 l1 xl1 offset-s1 offset-m1 offset-l1 offset-xl1">
-                <a href="#" class="soc-ico" title="Мой Instagram"><i class="fab fa-instagram fa-lg"></i></a>
-              </div>
-              <div class="col s1 m1 l1 xl1 offset-s2 offset-m2 offset-l2 offset-xl2">
-                <a href="#" class="soc-ico" title="Написать мне в Telegram"><i class="fab fa-telegram-plane fa-lg"></i></a>
-              </div>
-              <div class="col s1 m1 l1 xl1 offset-s2 offset-m2 offset-l2 offset-xl2">
-                <a href="#" class="soc-ico" title="Мой VK"><i class="fab fa-vk fa-lg"></i></a>
-              </div>
-              <div class="col s1 m1 l1 xl1 offset-s2 offset-m2 offset-l2 offset-xl2">
-                <a href="#" class="soc-ico" title="Авторизоваться"><i class="material-icons" style="font-size: 22px; vertical-align: middle; text-shadow: none">fingerprint</i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="free-space-middle"></div>
 
     <div>
       <%= yield %>
