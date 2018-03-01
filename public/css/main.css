@@ -10,12 +10,25 @@ html{
 }
 
 body {
+	height: 2000px;
 	background: #ffffff;
-	height: 3500px;
+}
+
+div.site-body {
+	background-image: -ms-linear-gradient(top, #ffffff 0%, #F6F6F6 47%, #ededed 100%);
+	background-image: -moz-linear-gradient(top, #ffffff 0%, #F6F6F6 47%, #ededed 100%);
+	background-image: -o-linear-gradient(top, #ffffff 0%, #F6F6F6 47%, #ededed 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff), color-stop(47, #F6F6F6), color-stop(100, #ededed));
+	background-image: -webkit-linear-gradient(top, #ffffff 0%, #F6F6F6 47%, #ededed 100%);
+	background-image: linear-gradient(to bottom, #ffffff 0%, #F6F6F6 47%, #ededed 100%);
+}
+
+div.row {
+	margin-bottom: 0;
 }
 
 /* -------------------- NAVIGATION TOP max-width: 1385px -------------------- */
-@media only screen and (max-width: 1550px) {
+@media only screen and (max-width: 1575px) {
   .hide-on-med-and-down {
     display: none !important;
   }
@@ -25,9 +38,14 @@ body {
 }
 
 nav {
+	height: 64px;
+	vertical-align: bottom;
 	font-family: Amatic SC;
 	font-weight: bold;
 	background: #ffffff;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
 }
 nav .brand-logo {
   color: #65737e;
@@ -40,21 +58,82 @@ a.first-nav-link {
 }
 
 /* -------------------- NAVIGATION SHOP max-width: 1385px -------------------- */
+.sticky-content{
+	background: transparent;
+	vertical-align: bottom;
+	height: 100px;
+  padding: 10px;
+	box-shadow: 0px 5px 4px 0px rgba(52, 61, 70, 0.5);
+	-moz-box-shadow: 0px 5px 4px 0px rgba(52, 61, 70, 0.5);
+	-webkit-box-shadow: 0px 5px 4px 0px rgba(52, 61, 70, 0.5);
+}
+
 .sticky-content.fixed{
   position: fixed;
-  top: 0;
+  top: 0px;
   left: 0;
   right: 0;
+  pading: 10px;
 }
 
-nav .shop-navigation {
-  border-color: #ffffff;
+.nav-shop {
+	height: 44px;
+	font-family: Amatic SC;
+	font-weight: normal;
+	font-size: 19px;
+	color: #65737e;
+	margin: auto;
+	cursor: pointer;
+}
+#search-box {
+position: relative;
+width: 100%;
+margin: 0;
 }
 
-a.shop-nav-link {
-		font-size: 60%;
-		color: #65737e;
-		letter-spacing: 2px;
+#search-form 
+{
+height: 40px;
+border: 1px solid #999;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+background-color: #fff;
+overflow: hidden;
+}
+
+#search-text 
+{
+font-size: 14px;
+color: #ddd;
+border-width: 0;
+background: transparent;
+}
+
+#search-box input[type="text"]
+{
+width: 90%;
+padding: 11px 0 12px 1em;
+color: #333;
+outline: none;
+}
+
+#search-button {
+position: absolute;
+top: 0;
+right: 0;
+height: 42px;
+width: 80px;
+font-size: 14px;
+color: #fff;
+text-align: center;
+line-height: 42px;
+border-width: 0;
+background-color:#ColourCode;
+-webkit-border-radius: 0px 5px 5px 0px;
+-moz-border-radius: 0px 5px 5px 0px;
+border-radius: 0px 5px 5px 0px;
+cursor: pointer;
 }
 
 /* -Выезжающая навигация сверху- */
@@ -76,17 +155,24 @@ div.free-space-top {
 
 /* -------------------- LOGO GOES HERE -------------------- */
 div.free-space-logo {
-	height: 40px;
+	height: 80px;
+	margin: 0;
 }
-div.my-logo {
+div.free-space-logo-small {
+	height: 20px;
+	margin: 0;
+}
+div.logo-block {
     background-image: linear-gradient(20deg, #FCA5F1, #B5FFFF);
 		vertical-align: bottom;
 		border: 5px solid #343d46;
-		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 		font-family: Amatic SC;
 		color: #343d46;
 		letter-spacing: 10px;
+}
+div.my-logo {
+	padding: : auto !important;
+	margin: auto !important;
 }
 
 a.my-logo {

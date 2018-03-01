@@ -1,34 +1,35 @@
-
+<div class="site-body">
 <div class="free-space-top"></div>
 
 <div class="container" align="center">
   <div class="row" align="center">
-    <div class="col s12 m6 l6 xl6 offset-m3 offset-l3 offset-xl3 my-logo">
+    <div class="col s12 m6 l6 xl6 offset-m3 offset-l3 offset-xl3 logo-block z-depth-4">
       
       <div class="row free-space-logo"></div>
 
       <a href="/" class="my-logo">
         <div class="row">
-          <div class="container">ALEXANDRA TSAREVA</div>
+          <div class="container my-logo">ALEXANDRA TSAREVA</div>
         </div>
         <div class="row">
-          <div class="container cakes-and-sweets">cakes & sweets</div>
+          <div class="container my-logo cakes-and-sweets">cakes & sweets</div>
         </div>
       </a>
 
       <div class="row free-space-logo"></div>
 
       <div class="row">
-        <div class="container">
+        <div class="container my-logo">
           <a href="/" class="rus-eng <%= @default_language == 'rus' ? 'active':'' %>" title="Русский язык">рус</a>
            / 
           <a href="/eng/" class="rus-eng <%= @default_language == 'eng' ? 'active':'' %>" title="English language">eng</a>
         </div>
 	    </div>
   
+  		<div class="row free-space-logo"></div>
         
 			<div class="row">
-			  <div class="container">
+			  <div class="container my-logo">
 			    <div class="col s1 m1 l1 xl1 offset-s1 offset-m1 offset-l1 offset-xl1">
 			      <a href="#" class="soc-ico" title="Мой Instagram"><i class="fab fa-instagram fa-lg"></i></a>
 			    </div>
@@ -39,10 +40,13 @@
 			      <a href="#" class="soc-ico" title="Мой VK"><i class="fab fa-vk fa-lg"></i></a>
 			    </div>
 			    <div class="col s1 m1 l1 xl1 offset-s2 offset-m2 offset-l2 offset-xl2">
-			      <a href="#" class="soc-ico" title="Авторизоваться"><i class="material-icons" style="font-size: 22px; vertical-align: middle; text-shadow: none">fingerprint</i></a>
+			      <a href="#" class="soc-ico" title="Войти"><i class="material-icons" style="font-size: 22px; vertical-align: middle; text-shadow: none">fingerprint</i></a>
 			    </div>
 			  </div>
 			</div>
+
+			<div class="row free-space-logo-small"></div>
+
     </div>
   </div>
 </div>
@@ -50,13 +54,74 @@
 <div class="free-space-middle"></div>
 
 <div id="sticky" class="sticky-element">
-	<div class="sticky-anchor"></div>
-		<div class="sticky-content">
-			<div class="container" align="left">
-				
-			</div>
-			
-	</div>
+    <div class="sticky-anchor"></div>
+    <div class="sticky-content">
+
+			<div class="row container" align="center">
+				<div class="nav-shop container col s12">
+		      <div class="container col s12 m1">
+				    <a class='' href='#'>Муссовый торт</a>
+				</div>
+		    <div class="nav-shop container col s12 m1">
+				    <a class='' href='#'>Бисквитный торт</a>
+		    </div>
+		    <div class="container col s12 m1">
+				    <a class='' href='#'>Муссовое пирожное</a>
+				</div>
+				<div class="nav-shop container col s12 m1">
+				    <a class='' href='#'>Шу</a>
+		    </div>
+		    <div class="nav-shop container col s12 m1">
+				    <a class='' href='#'>Павлова</a>
+		    </div>
+		    <div class="nav-shop container col s12 m1">
+				    <a class='' href='#'>Капкейки</a>
+		    </div>
+		    <div class="nav-shop container col s12 m1">
+				    <a class='' href='#'>Макаронс</a>
+		    </div>
+		    <div class="nav-shop container col s12 m1">
+				    <a class='' href='#'>Сладости</a>
+		    </div>
+		    <div class="nav-shop container col s12 m2">
+				  <div id='search-box'>
+						<form action='/search' id='search-form' method='get' target='_top'>
+						<input id='search-text' name='q' placeholder='Search' type='text'/>
+						<button id='search-button' type='submit'>                     
+						<span>Search</span>
+						</button>
+						</form>
+					</div>
+		    </div>
+	    </div>
+     </div>
+
+    </div>
 </div>
+</div>
+
 <div class="free-space-middle"></div>
 
+
+<script type="text/javascript" src="/vendor/jquery-3.2.0.min.js"></script>
+<script type="text/javascript" src="/js/materialize.min.js"></script>
+
+<script>
+	$(document).ready(function() {
+	    $('select').material_select();
+	});
+
+	$('.dropdown-button').dropdown({
+	  inDuration: 300,
+	  outDuration: 225,
+	  constrainWidth: false, // Does not change width of dropdown to that of the activator
+	  hover: true, // Activate on hover
+	  gutter: 0, // Spacing from edge
+	  belowOrigin: false, // Displays dropdown below the button
+	  alignment: 'left', // Displays dropdown with edge aligned to the left of button
+	  stopPropagation: false // Stops event propagation
+	}
+	);
+
+	$( '.nav-shop li:has(ul)' ).doubleTapToGo();
+</script>
