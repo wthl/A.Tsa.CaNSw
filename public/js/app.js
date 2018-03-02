@@ -35,7 +35,20 @@ var StickyElement = function(node){
 var demo = new StickyElement($('#sticky'));
 // Конец прилипающего блока
 
+// Анимация кнопок навигации магаза
+var removeSuccess;
 
+removeSuccess = function() {
+  return $('.button').removeClass('success');
+};
+
+$(document).ready(function() {
+  return $('.button').click(function() {
+    $(this).addClass('success');
+    return setTimeout(removeSuccess, 3000);
+  });
+});
+// Анимация кнопок навигации магаза
 
 
 function add_to_cart(id)

@@ -15,8 +15,11 @@ body {
 }
 
 div.row {
+	border: 1px;
+	margin-top: 0;
 	margin-bottom: 0;
 }
+
 
 /* -------------------- NAVIGATION TOP max-width: 1385px -------------------- */
 @media only screen and (max-width: 1575px) {
@@ -30,9 +33,8 @@ div.row {
 
 nav {
 	height: 64px;
-	vertical-align: bottom;
-	font-family: Amatic SC;
-	font-weight: bold;
+	font-family: Cuprum;
+	font-weight: light;
 	background: #ffffff;
 	box-shadow: none;
 	-moz-box-shadow: none;
@@ -43,7 +45,7 @@ nav .brand-logo {
 }
 
 a.first-nav-link {
-		font-size: 60%;
+		font-size: 50%;
 		color: #65737e;
 		letter-spacing: 2px;
 }
@@ -51,40 +53,47 @@ a.first-nav-link {
 /* -------------------- NAVIGATION SHOP max-width: 1385px -------------------- */
 .sticky-content{
 	background: transparent;
-	height: 100px;
-  padding: 10px;
+	height: 70px;
+  padding: 0;
 
 }
-
 .sticky-content.fixed{
   position: fixed;
-  top: 0px;
+  top: 0;
   left: 0;
   right: 0;
-  pading: 10px;
+  pading: 0;
 }
 
-.nav-shop {
-	height: 64px;
-	font-family: Amatic SC;
-	font-weight: bold;
-	font-size: 19px;
-	color: #65737e;
-	margin: auto;
-	padding: 0rem;
+div .nav-shop {
+	height: 70px;
+	border: 1px solid #ffffff;
 	cursor: pointer;
 	bottom: 0;
 		box-shadow: 0px 5px 4px 0px rgba(52, 61, 70, 0.5);
-	-moz-box-shadow: 0px 5px 4px 0px rgba(52, 61, 70, 0.5);
-	-webkit-box-shadow: 0px 5px 4px 0px rgba(52, 61, 70, 0.5);
-			  -webkit-transform: rotate(-1.5deg);
-		  -moz-transform: rotate(-1.5deg);
-		  -o-transform: rotate(-1.5deg);
-		  -ms-transform: rotate(-1.5deg);
-		  transform: translateY(30px) skewY(-1.5deg);
+		-moz-box-shadow: 0px 5px 4px 0px rgba(52, 61, 70, 0.5);
+		-webkit-box-shadow: 0px 5px 4px 0px rgba(52, 61, 70, 0.5);
 }
+ul .nav-shop-ul {
+	margin: 0 !important;
+}
+
+.button {
+  box-shadow: none;
+  transition: all 0.3s ease 0s;
+  outline: none;
+}
+.button:hover {
+	background-color: #ffffff;
+  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
 a.nav-shop-link {
-		font-size: 85%;
+		font-family: Cuprum;
+		font-weight: light;
+		font-size: 120%;
 		color: #65737e;
 		letter-spacing: 2px;
 }
@@ -93,7 +102,7 @@ a.nav-shop-link {
 	width: 250px;
 }
 .side-nav li > a {
-  font-size: 18px;
+  font-size: 100%;
   font-weight: bold;
   letter-spacing: 2px;
 }
@@ -116,22 +125,24 @@ div.free-space-logo-small {
 }
 div.logo-block {
     background-image: linear-gradient(20deg, #FCA5F1, #B5FFFF);
-		vertical-align: bottom;
-		border: 5px solid #343d46;
+		border: 5px solid #334a5b;
 		font-family: Amatic SC;
 		color: #343d46;
 		letter-spacing: 10px;
+  	transition: 1s;
+}
+div.logo-block:hover {
+		border: 5px solid #343d46;
 }
 div.my-logo {
 	padding: : auto !important;
 	margin: auto !important;
 }
-
 a.my-logo {
 		font-size: 350%;
 		text-shadow: 1px 1px 2px #65737e;
-		color: #343d46;
 		letter-spacing: 10px;
+		color: #343d46;
 }
 div.cakes-and-sweets {
 		font-family: Amatic SC;
@@ -150,10 +161,6 @@ a.rus-eng:hover {
 	color: #FFFFFF; 
 	text-shadow: 1px 1px 2px 1px #65737e;
 }
-a.rus-eng:active { 
-	color: #FFFFFF;
-	text-shadow: 1px 1px 2px 1px #65737e;
-	}
 a.rus-eng.active { 
 	color: #FFFFFF;
 	text-shadow: 1px 1px 2px 1px #65737e;
@@ -176,7 +183,7 @@ a.soc-ico :hover {
 
 /* -------------------- MAIN SHIT GOES HERE max-width: 1385px -------------------- */
 div.free-space-middle {
-	height: 64px;
+	height: 80px;
 }
 
 div.my-shit {
