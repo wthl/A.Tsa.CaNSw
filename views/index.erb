@@ -20,9 +20,9 @@
 
       <div class="row">
         <div class="container my-logo">
-          <a href="/" class="rus-eng <%= @default_language == 'rus' ? 'active':'' %>" title="Русский язык">рус</a>
+          <a href="/" class="rus-eng <%= @default_language == 'rus' ? 'active':'' %>" title="Русская версия">рус</a>
            / 
-          <a href="/eng/" class="rus-eng <%= @default_language == 'eng' ? 'active':'' %>" title="English language">eng</a>
+          <a href="/eng/" class="rus-eng <%= @default_language == 'eng' ? 'active':'' %>" title="English version">eng</a>
         </div>
 	    </div>
   
@@ -57,64 +57,37 @@
     <div class="sticky-anchor"></div>
     <div class="sticky-content">
 
-
     	<div class="nav-shop">
-
-					<ul class="nav-shop-ul">
-						<div class="row container">
-								<div class="container col s4 m2">
-									<li>
-									<div class="container button" align="center">
-								  	<a class='nav-shop-link' href='#'>Торты</a>
-								  </div>
-							  	</li>
-								</div>
-						    <div class="container col s4 m2">
-						    	<li>
-						    	<div class="container button" align="center">
-								  	<a class='nav-shop-link' href='#'>Пирожные</a>
-								  </div>
-									</li>
-						    </div>
-						    <div class="container col s4 m2">
-						    	<li>
-						    	<div class="container button" align="center">
-								  	<a class='nav-shop-link' href='#'>Капкейки</a>
-								  </div>
-									</li>
-								</div>
-								<div class="container col s4 m2">
-									<li>
-									<div class="container button" align="center">
-								  	<a class='nav-shop-link' href='#'>Макаронс</a>
-								  </div>
-									</li>
-						    </div>
-						    <div class="container col s4 m2">
-						    	<li>
-						    	<div class="container button" align="center">
-								  	<a class='nav-shop-link' href='#'>Сладости</a>
-								  </div>
-								  </li>
-						    </div>
-						    <div class="container col s4 m2">
-									<li>
-									<div class="container button" align="center">
-								  	<a class='nav-shop-link' href='#'><i class="fas fa-cart-arrow-down" data-fa-transform="grow-6"></i></a>
-								  </div>
-									</li>
-						    </div>
-						</div>
-    			</ul>
-	    
+				<div class="row container center">
+					
+					<a href="#">
+						<div class="container col s6 m6 l2 xl2 nav-shop-section">Торты</div>
+					</a>
+					<a href="#">
+						<div class="container col s6 m6 l2 xl2 nav-shop-section">Пирожные</div>
+					</a>
+					<a href='#'>
+			    	<div class="container col s6 m6 l2 xl2 nav-shop-section">Капкейки</div>
+			    </a>
+			    <a href='#'>
+						<div class="container col s6 m6 l2 xl2 nav-shop-section">Макаронс</div>
+					</a>
+					<a href='#'>
+			    	<div class="container col s6 m6 l2 xl2 nav-shop-section">Сладости</div>
+			    </a>
+			    <a href='#'>
+			    	<div class="container col s6 m6 l2 xl2 nav-shop-section">Корзина(...)</div>
+			    </a>
+				</div>
 			</div>
-     
 
     </div>
 </div>
 
 
 <div class="free-space-middle"></div>
+
+
 
 
 <script type="text/javascript" src="/vendor/jquery-3.2.0.min.js"></script>
@@ -125,17 +98,4 @@
 	    $('select').material_select();
 	});
 
-	$('.dropdown-button').dropdown({
-	  inDuration: 300,
-	  outDuration: 225,
-	  constrainWidth: false, // Does not change width of dropdown to that of the activator
-	  hover: true, // Activate on hover
-	  gutter: 0, // Spacing from edge
-	  belowOrigin: false, // Displays dropdown below the button
-	  alignment: 'left', // Displays dropdown with edge aligned to the left of button
-	  stopPropagation: false // Stops event propagation
-	}
-	);
-
-	$( '.nav-shop li:has(ul)' ).doubleTapToGo();
 </script>

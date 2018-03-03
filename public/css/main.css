@@ -10,12 +10,12 @@ html{
 }
 
 body {
-	height: 2000px;
+	height: 3000px;
 	background: #ffffff;
+  background-image: radial-gradient(circle, #eeeeee, #e9e9ec, #e4e5ea, #dde0e9, #d6dce7);
 }
 
 div.row {
-	border: 1px;
 	margin-top: 0;
 	margin-bottom: 0;
 }
@@ -35,8 +35,9 @@ nav {
 	height: 64px;
 	font-family: Cuprum;
 	font-weight: light;
-	background: #ffffff;
+	background: transparent;
 	box-shadow: none;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 	-moz-box-shadow: none;
 	-webkit-box-shadow: none;
 }
@@ -53,9 +54,7 @@ a.first-nav-link {
 /* -------------------- NAVIGATION SHOP max-width: 1385px -------------------- */
 .sticky-content{
 	background: transparent;
-	height: 70px;
   padding: 0;
-
 }
 .sticky-content.fixed{
   position: fixed;
@@ -66,44 +65,52 @@ a.first-nav-link {
 }
 
 div .nav-shop {
-	height: 70px;
-	border: 1px solid #ffffff;
+	display: block;
+	height: 64px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 	cursor: pointer;
-	bottom: 0;
-		box-shadow: 0px 5px 4px 0px rgba(52, 61, 70, 0.5);
-		-moz-box-shadow: 0px 5px 4px 0px rgba(52, 61, 70, 0.5);
-		-webkit-box-shadow: 0px 5px 4px 0px rgba(52, 61, 70, 0.5);
-}
-ul .nav-shop-ul {
-	margin: 0 !important;
-}
-
-.button {
+  padding: auto;
+  text-align: center;
   box-shadow: none;
-  transition: all 0.3s ease 0s;
-  outline: none;
+  text-decoration: none;
 }
-.button:hover {
-	background-color: #ffffff;
-  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
-  color: #fff;
-  transform: translateY(-1px);
+div .nav-shop-section {
+	display: flex;
+  align-items: center;
+  justify-content: center;
+	height: 64px;
+  margin: 0 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+
+	font-family: Cuprum;
+	font-weight: light;
+	font-size: 100%;
+	color: #65737e;
+	letter-spacing: 2px;
+
+  -webkit-transition: background-color 0.2s linear;
+ 	-o-transition: background-color 0.2s linear;
+ 	-moz-transition: background-color 0.2s linear;
+ 	 transition: background-color 0.2s linear;
+}
+div .nav-shop-section:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+	border: 1px solid #ffffff;
+	border-radius: 1px;
+	color: #ffffff;
+	-webkit-box-shadow: inset -1px 0px 29px 6px rgba(255, 255, 255, 0.3), 0px 10px 10px -3px rgba(255, 255, 255, 0.5);
+	-moz-box-shadow:    inset -1px 0px 29px 6px rgba(255, 255, 255, 0.3), 0px 10px 10px -3px rgba(255, 255, 255, 0.5);
+	box-shadow:         inset -1px 0px 29px 6px rgba(255, 255, 255, 0.3), 0px 10px 10px -3px rgba(255, 255, 255, 0.5);
+
 }
 
-a.nav-shop-link {
-		font-family: Cuprum;
-		font-weight: light;
-		font-size: 120%;
-		color: #65737e;
-		letter-spacing: 2px;
-}
 /* -Выезжающая навигация сверху- */
 .side-nav {
 	width: 250px;
 }
 .side-nav li > a {
   font-size: 100%;
-  font-weight: bold;
+  font-weight: light;
   letter-spacing: 2px;
 }
 p.side-navigation {
@@ -129,7 +136,7 @@ div.logo-block {
 		font-family: Amatic SC;
 		color: #343d46;
 		letter-spacing: 10px;
-  	transition: 1s;
+  	transition: 0.7s;
 }
 div.logo-block:hover {
 		border: 5px solid #343d46;
