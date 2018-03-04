@@ -12,7 +12,7 @@ html{
 body {
 	height: 3000px;
 	background: #ffffff;
-  background-image: radial-gradient(circle, #eeeeee, #e9e9ec, #e4e5ea, #dde0e9, #d6dce7);
+  
 }
 
 div.row {
@@ -21,7 +21,7 @@ div.row {
 }
 
 
-/* -------------------- NAVIGATION TOP max-width: 1385px -------------------- */
+/* -------------------- NAVIGATION TOP max-width: 1575px -------------------- */
 @media only screen and (max-width: 1575px) {
   .hide-on-med-and-down {
     display: none !important;
@@ -37,7 +37,7 @@ nav {
 	font-weight: light;
 	background: transparent;
 	box-shadow: none;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 	-moz-box-shadow: none;
 	-webkit-box-shadow: none;
 }
@@ -51,13 +51,14 @@ a.first-nav-link {
 		letter-spacing: 2px;
 }
 
-/* -------------------- NAVIGATION SHOP max-width: 1385px -------------------- */
+/* -------------------- NAVIGATION SHOP max-width: 1575px -------------------- */
 .sticky-content{
 	background: transparent;
   padding: 0;
 }
 .sticky-content.fixed{
   position: fixed;
+  z-index: 99;
   top: 0;
   left: 0;
   right: 0;
@@ -67,7 +68,7 @@ a.first-nav-link {
 div .nav-shop {
 	display: block;
 	height: 64px;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+	
 	cursor: pointer;
   padding: auto;
   text-align: center;
@@ -75,12 +76,15 @@ div .nav-shop {
   text-decoration: none;
 }
 div .nav-shop-section {
+	background: rgba(0, 0, 0, 0.1);
 	display: flex;
   align-items: center;
   justify-content: center;
 	height: 64px;
   margin: 0 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+
 
 	font-family: Cuprum;
 	font-weight: light;
@@ -88,15 +92,17 @@ div .nav-shop-section {
 	color: #65737e;
 	letter-spacing: 2px;
 
-  -webkit-transition: background-color 0.2s linear;
- 	-o-transition: background-color 0.2s linear;
- 	-moz-transition: background-color 0.2s linear;
- 	 transition: background-color 0.2s linear;
+	transition: 0.3s;
+}
+div.nav-shop-section.left {
+	border-left: 1px solid rgba(0, 0, 0, 0.12);
+}
+div.nav-shop-section.right {
+	border-right: 1px solid rgba(0, 0, 0, 0.12);
 }
 div .nav-shop-section:hover {
 	background-color: rgba(0, 0, 0, 0.1);
 	border: 1px solid #ffffff;
-	border-radius: 1px;
 	color: #ffffff;
 	-webkit-box-shadow: inset -1px 0px 29px 6px rgba(255, 255, 255, 0.3), 0px 10px 10px -3px rgba(255, 255, 255, 0.5);
 	-moz-box-shadow:    inset -1px 0px 29px 6px rgba(255, 255, 255, 0.3), 0px 10px 10px -3px rgba(255, 255, 255, 0.5);
@@ -106,7 +112,7 @@ div .nav-shop-section:hover {
 
 /* -Выезжающая навигация сверху- */
 .side-nav {
-	width: 250px;
+	width: 230px;
 }
 .side-nav li > a {
   font-size: 100%;
@@ -118,7 +124,7 @@ p.side-navigation {
 }
 
 div.free-space-top {
-	height: 64px;
+	height: 84px;
 }
 
 /* -------------------- LOGO GOES HERE -------------------- */
@@ -132,11 +138,11 @@ div.free-space-logo-small {
 }
 div.logo-block {
     background-image: linear-gradient(20deg, #FCA5F1, #B5FFFF);
-		border: 5px solid #334a5b;
+		border: 5px solid #4b5c6c;
 		font-family: Amatic SC;
 		color: #343d46;
 		letter-spacing: 10px;
-  	transition: 0.7s;
+  	transition: 0.6s;
 }
 div.logo-block:hover {
 		border: 5px solid #343d46;
@@ -188,20 +194,101 @@ a.soc-ico :hover {
 		text-shadow: 1px 1px 2px 1px #65737e;
 }
 
-/* -------------------- MAIN SHIT GOES HERE max-width: 1385px -------------------- */
-div.free-space-middle {
-	height: 80px;
+/* -------------------- MAIN SHIT GOES HERE max-width: 1575px -------------------- */
+div.free-space-middle-top {
+	height: 100px;
+}
+div.free-space-middle-bot {
+	height: 120px;
 }
 
-div.my-shit {
-background-color: #ffffff;
-		vertical-align: middle;
-		border: none;
-		box-shadow: none;
+div .shop-table {
+	position: relative;
+	margin: 0;
+
+	font-family: Cuprum;
+	color: #65737e;
+
 }
-div.my-shit:hover {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+div.shop-table h2 {
+	align: center;
+	font-size: 150%;
+	font-weight: light;
+	margin: 0;
+	padding: 0:;
 }
+div.shop-table h3 {
+	font-size: 100%;
+	font-weight: light;
+
+	color: rgba(0, 0, 0, 0.5);
+}
+div.shop-table h4 {
+	font-size: 50%;
+	font-weight: light;
+}
+div.shop-table-header {
+	text-align: right;
+	padding: auto;
+	margin: auto;
+}
+div .shop-table-name {
+	position: relative;
+	margin:0 auto;
+	padding: 0;
+	height: 30px;
+}
+div.shop-card-holder {
+	height: 480px;
+	background: #ffffff;
+	position: relative;
+	
+	font-family: Cuprum;
+	color: #343d46;
+	letter-spacing: 3px;
+
+	padding: 0;
+	margin: 0;
+	border-bottom: 5px solid #ffffff;
+	border-radius: 2px;
+}
+img .shop-card-holder {
+	display: block
+	width: 100%
+	height: 420px;
+}
+
+div.shop-card-info {
+	position: absolute;
+	display: none;
+	height: 420px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 2px;
+  color: #ddd;
+  padding: 0;
+  margin: 0;
+  transition: 0.4s;
+}
+div.shop-card-info .description {
+	width: 400px;
+	height: 200px;
+	position: relative;
+  top: 300px;
+  color: #fff;
+  padding: 10px;
+}
+div.shop-card-info:hover {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+}
+.shop-card-holder:hover .shop-card-info{
+    display: block;
+}
+
 
 /* -------------------- FOOTER max-width: 1385px -------------------- */
 div.free-space-bottom {
