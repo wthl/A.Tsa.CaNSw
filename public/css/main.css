@@ -20,6 +20,11 @@ div.row {
 	margin-bottom: 0;
 }
 
+div.col {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
 
 /* -------------------- NAVIGATION TOP max-width: 1575px -------------------- */
 @media only screen and (max-width: 1575px) {
@@ -96,13 +101,15 @@ div .nav-shop-section {
 }
 div.nav-shop-section.left {
 	border-left: 1px solid rgba(0, 0, 0, 0.12);
+	border-radius: 1px;
 }
 div.nav-shop-section.right {
 	border-right: 1px solid rgba(0, 0, 0, 0.12);
+	border-radius: 2px;
 }
 div .nav-shop-section:hover {
 	background-color: rgba(0, 0, 0, 0.1);
-	border: 1px solid #ffffff;
+	border: 1px solid rgba(255, 255, 255, 0.7);
 	color: #ffffff;
 	-webkit-box-shadow: inset -1px 0px 29px 6px rgba(255, 255, 255, 0.3), 0px 10px 10px -3px rgba(255, 255, 255, 0.5);
 	-moz-box-shadow:    inset -1px 0px 29px 6px rgba(255, 255, 255, 0.3), 0px 10px 10px -3px rgba(255, 255, 255, 0.5);
@@ -123,8 +130,9 @@ p.side-navigation {
 	height: 100px;
 }
 
+
 div.free-space-top {
-	height: 84px;
+	height: 80px;
 }
 
 /* -------------------- LOGO GOES HERE -------------------- */
@@ -196,10 +204,10 @@ a.soc-ico :hover {
 
 /* -------------------- MAIN SHIT GOES HERE max-width: 1575px -------------------- */
 div.free-space-middle-top {
-	height: 100px;
+	height: 80px;
 }
 div.free-space-middle-bot {
-	height: 120px;
+	height: 64px;
 }
 
 div .shop-table {
@@ -220,8 +228,8 @@ div.shop-table h2 {
 div.shop-table h3 {
 	font-size: 100%;
 	font-weight: light;
-
 	color: rgba(0, 0, 0, 0.5);
+	margin: auto;
 }
 div.shop-table h4 {
 	font-size: 50%;
@@ -233,10 +241,8 @@ div.shop-table-header {
 	margin: auto;
 }
 div .shop-table-name {
-	position: relative;
-	margin:0 auto;
+	height: 40px;
 	padding: 0;
-	height: 30px;
 }
 div.shop-card-holder {
 	height: 480px;
@@ -245,41 +251,40 @@ div.shop-card-holder {
 	
 	font-family: Cuprum;
 	color: #343d46;
-	letter-spacing: 3px;
 
 	padding: 0;
 	margin: 0;
 	border-bottom: 5px solid #ffffff;
-	border-radius: 2px;
+	border-radius: 1px;
 }
 img .shop-card-holder {
 	display: block
 	width: 100%
-	height: 420px;
+	height: 435px;
 }
 
 div.shop-card-info {
 	position: absolute;
 	display: none;
-	height: 420px;
+	height: 435px;
   left: 0;
   bottom: 0;
   right: 0;
   top: 0;
   background: rgba(255, 255, 255, 0.7);
-  border-radius: 2px;
+  border-radius: 1px;
   color: #ddd;
   padding: 0;
   margin: 0;
-  transition: 0.4s;
+
 }
 div.shop-card-info .description {
 	width: 400px;
 	height: 200px;
 	position: relative;
-  top: 300px;
   color: #fff;
-  padding: 10px;
+  top: 100px;
+	margin: 0 auto;
 }
 div.shop-card-info:hover {
   color: #fff;
