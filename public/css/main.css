@@ -77,20 +77,15 @@ div .nav-shop {
 	cursor: pointer;
   padding: auto;
   text-align: center;
-  box-shadow: none;
-  text-decoration: none;
 }
 div .nav-shop-section {
-	background: rgba(0, 0, 0, 0.1);
+	background: rgba(250, 250, 250, 0.9);
 	display: flex;
   align-items: center;
   justify-content: center;
 	height: 64px;
   margin: 0 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.12);
-	border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-
-
+  
 	font-family: Cuprum;
 	font-weight: light;
 	font-size: 100%;
@@ -99,22 +94,12 @@ div .nav-shop-section {
 
 	transition: 0.3s;
 }
-div.nav-shop-section.left {
-	border-left: 1px solid rgba(0, 0, 0, 0.12);
-	border-radius: 1px;
-}
-div.nav-shop-section.right {
-	border-right: 1px solid rgba(0, 0, 0, 0.12);
-	border-radius: 2px;
-}
-div .nav-shop-section:hover {
-	background-color: rgba(0, 0, 0, 0.1);
-	border: 1px solid rgba(255, 255, 255, 0.7);
-	color: #ffffff;
-	-webkit-box-shadow: inset -1px 0px 29px 6px rgba(255, 255, 255, 0.3), 0px 10px 10px -3px rgba(255, 255, 255, 0.5);
-	-moz-box-shadow:    inset -1px 0px 29px 6px rgba(255, 255, 255, 0.3), 0px 10px 10px -3px rgba(255, 255, 255, 0.5);
-	box-shadow:         inset -1px 0px 29px 6px rgba(255, 255, 255, 0.3), 0px 10px 10px -3px rgba(255, 255, 255, 0.5);
 
+div .nav-shop-section:hover {
+	background-color: rgba(240, 240, 240, 0.9);
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 2px;
+	color: #ffffff;
 }
 
 /* -Выезжающая навигация сверху- */
@@ -148,9 +133,8 @@ div.logo-block {
     background-image: linear-gradient(20deg, #FCA5F1, #B5FFFF);
 		border: 5px solid #4b5c6c;
 		font-family: Amatic SC;
-		color: #343d46;
 		letter-spacing: 10px;
-  	transition: 0.6s;
+  	transition: 0.5s;
 }
 div.logo-block:hover {
 		border: 5px solid #343d46;
@@ -160,10 +144,10 @@ div.my-logo {
 	margin: auto !important;
 }
 a.my-logo {
+		color: #343d46;
 		font-size: 350%;
 		text-shadow: 1px 1px 2px #65737e;
 		letter-spacing: 10px;
-		color: #343d46;
 }
 div.cakes-and-sweets {
 		font-family: Amatic SC;
@@ -172,11 +156,11 @@ div.cakes-and-sweets {
 		text-shadow: none;
 }
 a.rus-eng {
+		color: #343d46;
 		font-family: Amatic SC;
 		font-size: 100%;
 		letter-spacing: 10px;
 		text-shadow: none;
-		color: #343d46;
 }
 a.rus-eng:hover { 
 	color: #FFFFFF; 
@@ -203,20 +187,18 @@ a.soc-ico :hover {
 }
 
 /* -------------------- MAIN SHIT GOES HERE max-width: 1575px -------------------- */
-div.free-space-middle-top {
+div.free-space-middle {
 	height: 80px;
-}
-div.free-space-middle-bot {
-	height: 64px;
 }
 
 div .shop-table {
 	position: relative;
 	margin: 0;
-
 	font-family: Cuprum;
 	color: #65737e;
-
+}
+div.shop-table .free-space {
+	height: 32px;
 }
 div.shop-table h2 {
 	align: center;
@@ -240,12 +222,9 @@ div.shop-table-header {
 	padding: auto;
 	margin: auto;
 }
-div .shop-table-name {
-	height: 40px;
-	padding: 0;
-}
+
 div.shop-card-holder {
-	height: 480px;
+	height: 240px;
 	background: #ffffff;
 	position: relative;
 	
@@ -253,14 +232,14 @@ div.shop-card-holder {
 	color: #343d46;
 
 	padding: 0;
-	margin: 0;
-	border-bottom: 5px solid #ffffff;
+	margin: 2px;
+	border: 5px solid rgba(0, 0, 0, 0.7);
 	border-radius: 1px;
 }
 img .shop-card-holder {
 	display: block
 	width: 100%
-	height: 435px;
+	height: 100%;
 }
 
 div.shop-card-info {
@@ -276,7 +255,6 @@ div.shop-card-info {
   color: #ddd;
   padding: 0;
   margin: 0;
-
 }
 div.shop-card-info .description {
 	width: 400px;
