@@ -29,10 +29,10 @@
       <div class="nav-wrapper">
         <a href="#" data-activates="mobile-demo" class="button-collapse brand-logo center"><i class="material-icons">menu</i></a>
         <ul class="brand-logo center hide-on-med-and-down">
-          <li><a href="#" class="first-nav-link">&#8195;&#8195;<%= @default_language == 'rus' ? 'Блог' : 'Blog' %>&#8195;&#8195;</a></li>
-          <li><a href="#" class="first-nav-link">&#8195;&#8195;<%= @default_language == 'rus' ? 'Галерея' : 'Gallery' %>&#8195;&#8195;</a></li>
-          <li><a href="#" class="first-nav-link">&#8195;&#8195;<%= @default_language == 'rus' ? 'Вопросы и ответы' : 'Q & A' %>&#8195;&#8195;</a></li>
-          <li><a href="#" class="first-nav-link">&#8195;&#8195;<%= @default_language == 'rus' ? 'Контакты' : 'Contacts' %>&#8195;&#8195;</a></li>
+          <li><a href="<%= @default_language == 'rus' ? '/blog' : '/eng/blog' %>" class="first-nav-link">&#8195;&#8195;<%= @default_language == 'rus' ? 'Блог' : 'Blog' %>&#8195;&#8195;</a></li>
+          <li><a href="<%= @default_language == 'rus' ? '/gallery' : '/eng/gallery' %>" class="first-nav-link">&#8195;&#8195;<%= @default_language == 'rus' ? 'Галерея' : 'Gallery' %>&#8195;&#8195;</a></li>
+          <li><a href="<%= @default_language == 'rus' ? '/q&a' : '/eng/q&a' %>" class="first-nav-link">&#8195;&#8195;<%= @default_language == 'rus' ? 'Вопросы и ответы' : 'Q & A' %>&#8195;&#8195;</a></li>
+          <li><a href="<%= @default_language == 'rus' ? '/contacts' : '/eng/contacts' %>" class="first-nav-link">&#8195;&#8195;<%= @default_language == 'rus' ? 'Контакты' : 'Contacts' %>&#8195;&#8195;</a></li>
         </ul>
         <ul class="side-nav" id="mobile-demo">
           <p class="side-navigation"></p>

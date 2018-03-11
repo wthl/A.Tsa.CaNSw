@@ -99,7 +99,6 @@ div .nav-shop-section:hover {
 	background-color: rgba(240, 240, 240, 0.9);
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 2px;
-	color: #ffffff;
 }
 
 /* -Выезжающая навигация сверху- */
@@ -225,50 +224,48 @@ div.shop-table-header {
 
 div.shop-card-holder {
 	height: 240px;
-	background: #ffffff;
+
+	background: #f0f0f0;
+
 	position: relative;
-	
 	font-family: Cuprum;
 	color: #343d46;
-
 	padding: 0;
 	margin: 2px;
-	border: 5px solid rgba(0, 0, 0, 0.7);
-	border-radius: 1px;
+	border: 1px solid green;
 }
 img .shop-card-holder {
 	display: block
-	width: 100%
 	height: 100%;
+	margin: 0;
 }
 
-div.shop-card-info {
+div.shop-card-name {
 	position: absolute;
 	display: none;
-	height: 435px;
   left: 0;
   bottom: 0;
   right: 0;
   top: 0;
   background: rgba(255, 255, 255, 0.7);
-  border-radius: 1px;
   color: #ddd;
   padding: 0;
   margin: 0;
 }
-div.shop-card-info .description {
-	width: 400px;
-	height: 200px;
+div.shop-card-name .description {
+	width: 100%;
+	height: 50%;
+	background: #e7182a;
 	position: relative;
   color: #fff;
-  top: 100px;
+  top: 50%;
 	margin: 0 auto;
 }
-div.shop-card-info:hover {
+div.shop-card-name:hover {
   color: #fff;
   background: rgba(0, 0, 0, 0.5);
 }
-.shop-card-holder:hover .shop-card-info{
+.shop-card-holder:hover .shop-card-name{
     display: block;
 }
 
