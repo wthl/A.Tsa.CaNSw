@@ -1,4 +1,9 @@
+.grid {
+  display: grid; }
+
 .shop-section {
-  pading: 20px; }
+  padding: 0;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px; }
 
 /*# sourceMappingURL=shop.css.map */
