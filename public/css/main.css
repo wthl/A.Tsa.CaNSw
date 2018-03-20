@@ -11,7 +11,7 @@ html{
 
 body {
 	height: 3000px;
-	background: #ffffff;
+	background: #fff;
   
 }
 
@@ -98,7 +98,7 @@ div .nav-shop-section {
 div .nav-shop-section:hover {
 	background-color: rgba(240, 240, 240, 0.9);
 	border: 1px solid rgba(0, 0, 0, 0.1);
-	border-radius: 2px;
+	border-radius: 1px;
 }
 
 /* -Выезжающая навигация сверху- */
