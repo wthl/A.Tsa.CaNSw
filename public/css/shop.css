@@ -28,7 +28,7 @@
   font-weight: light;
   color: rgba(150, 150, 150, 0.8); }
   .shop-topic-left:nth-child(1) {
-    grid-row: 1/3; }
+    grid-column: 1/3; }
 
 .shop-topic-right {
   border: 1px solid rgba(0, 0, 0, 0.1);

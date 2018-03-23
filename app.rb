@@ -33,6 +33,11 @@ get '/contacts' do
 	erb :contacts
 end
 
+get '/cart' do
+	@language = "rus"
+	erb :cart
+end
+
 # ENGLISH VERSION
 
 get '/eng/' do
@@ -58,4 +63,9 @@ end
 get '/eng/contacts' do
 	@language = "eng"
 	erb :contacts_eng
+end
+
+get '/eng/cart' do
+	@language = "eng"
+	erb :cart_eng
 end

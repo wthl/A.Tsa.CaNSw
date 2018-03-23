@@ -162,15 +162,15 @@ a.rus-eng {
 		text-shadow: none;
 }
 a.rus-eng:hover { 
-	color: #FFFFFF; 
+	color: #fff; 
 	text-shadow: 1px 1px 2px 1px #65737e;
 }
-a.rus-eng:active { 
-	color: #FFFFFF;
+a.rus-eng.active { 
+	color: #fff;
 	text-shadow: 1px 1px 2px 1px #65737e;
 	}
 a.rus-eng::visited { 
-	color: #FFFFFF;
+	color: #fff;
 	text-shadow: 1px 1px 2px 1px #65737e;
 }
 
