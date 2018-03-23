@@ -165,7 +165,7 @@ a.rus-eng:hover {
 	color: #FFFFFF; 
 	text-shadow: 1px 1px 2px 1px #65737e;
 }
-a.rus-eng.active { 
+a.rus-eng:active { 
 	color: #FFFFFF;
 	text-shadow: 1px 1px 2px 1px #65737e;
 	}

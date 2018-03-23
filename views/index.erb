@@ -60,23 +60,23 @@
     	<div class="nav-shop">
 				<div class="row container center">
 					
-					<a href="#">
-						<div class="container col s4 m4 l2 xl2 nav-shop-section left">Торты</div>
+					<a href="#Cakes">
+						<div class="container col s4 m4 l2 xl2 nav-shop-section">Торты</div>
 					</a>
-					<a href="#">
+					<a href="#Small-Cakes">
 						<div class="container col s4 m4 l2 xl2 nav-shop-section">Пирожные</div>
 					</a>
-					<a href='#'>
+					<a href="#Cupcakes">
 			    	<div class="container col s4 m4 l2 xl2 nav-shop-section">Капкейки</div>
 			    </a>
-			    <a href='#'>
+			    <a href="#Macarons">
 						<div class="container col s4 m4 l2 xl2 nav-shop-section">Макаронс</div>
 					</a>
-					<a href='#'>
+					<a href="#Sweets">
 			    	<div class="container col s4 m4 l2 xl2 nav-shop-section">Сладости</div>
 			    </a>
-			    <a href='#'>
-			    	<div class="container col s4 m4 l2 xl2 nav-shop-section right">Корзина(...)</div>
+			    <a href="/Cart">
+			    	<div class="container col s4 m4 l2 xl2 nav-shop-section">Корзина(...)</div>
 			    </a>
 				</div>
 			</div>
@@ -90,7 +90,7 @@
 <div class="container">
 
 	<div class="shop-section grid">
-		<div class="shop-topic-left grid">
+		<div class="shop-topic-left grid" id="Cakes">
 			<span>/Торты</span>
 		</div>
 		<div class="shop-item grid z-depth-1" style="background-image: url(../images/Cakes/Banana-Cake1.jpg)">
@@ -106,10 +106,10 @@
 			<div class="item-info" data-title="Имбирное печенье" data-description="1599 руб / кг"></div>
 		</div>
 		<div class="shop-item grid z-depth-1" style="background-image: url(../images/Cakes/Lemon-Poppyseed-Cake1.jpg)">
-			<div class="item-info" data-title="Лемон и мак" data-description="1599 руб / кг"></div>
+			<div class="item-info" data-title="Лимон и мак" data-description="1599 руб / кг"></div>
 		</div>
 		<div class="shop-item grid z-depth-1" style="background-image: url(../images/Cakes/Mocha-Cake1.jpg)">
-			<div class="item-info" data-title="Кофе мокко" data-description="1599 руб / кг"></div>
+			<div class="item-info" data-title="Кофе мокка" data-description="1599 руб / кг"></div>
 		</div>
 		<div class="shop-item grid z-depth-1" style="background-image: url(../images/Cakes/Vanilla-Bean-Cheesecake1.jpg)">
 			<div class="item-info" data-title="Ванильный чизкейк" data-description="1599 руб / кг"></div>
@@ -119,17 +119,33 @@
 	<div class="free-space-middle"></div>
 
 	<div class="shop-section grid">
-		<div class="shop-item grid z-depth-1" style="background-image: url(../images/Cupcakes/Birthday-Chocolate-Cupcake1.jpg)"></div>
-		<div class="shop-topic-right grid">
-			<span>/Пирожные</span>
+		<div class="shop-item grid z-depth-1" style="background-image: url(../images/Cupcakes/Birthday-Chocolate-Cupcake1.jpg)">
+			<div class="item-info" data-title="Шоколад" data-description="799 руб / 6 шт"></div>
 		</div>
-		<div class="shop-item grid z-depth-1" style="background-image: url(../images/Cupcakes/Lemon-Meringue-Cupcake1.jpg)"></div>
-		<div class="shop-item grid z-depth-1" style="background-image: url(../images/Cupcakes/Mojito-Cupcake1.jpg)"></div>
-		<div class="shop-item grid z-depth-1" style="background-image: url(../images/Cupcakes/Stout-Cupcake1.jpg)"></div>
-		<div class="shop-item grid z-depth-1" style="background-image: url(../images/Cupcakes/Birthday-Chocolate-Cupcake1.jpg)"></div>
-		<div class="shop-item grid z-depth-1" style="background-image: url(../images/Cupcakes/Mojito-Cupcake1.jpg)"></div>
-		<div class="shop-item grid z-depth-1" style="background-image: url(../images/Cupcakes/Lemon-Meringue-Cupcake1.jpg)"></div>
-		<div class="shop-item grid z-depth-1" style="background-image: url(../images/Cupcakes/Mojito-Cupcake1.jpg)"></div>
+		<div class="shop-topic-right grid" id="Cupcakes">
+			<span>/Капкейки</span>
+		</div>
+		<div class="shop-item grid z-depth-1" style="background-image: url(../images/Cupcakes/Lemon-Meringue-Cupcake1.jpg)">
+			<div class="item-info" data-title="Лимон и меренга" data-description="799 руб / 6 шт"></div>
+		</div>
+		<div class="shop-item grid z-depth-1" style="background-image: url(../images/Cupcakes/Mojito-Cupcake1.jpg)">
+			<div class="item-info" data-title="Мохито" data-description="799 руб / 6 шт"></div>
+		</div>
+		<div class="shop-item grid z-depth-1" style="background-image: url(../images/Cupcakes/Stout-Cupcake1.jpg)">
+			<div class="item-info" data-title="Стаут" data-description="799 руб / 6 шт"></div>
+		</div>
+		<div class="shop-item grid z-depth-1" style="background-image: url(../images/Cupcakes/Birthday-Chocolate-Cupcake1.jpg)">
+			<div class="item-info" data-title="Шоколад" data-description="799 руб / 6 шт"></div>
+		</div>
+		<div class="shop-item grid z-depth-1" style="background-image: url(../images/Cupcakes/Mojito-Cupcake1.jpg)">
+			<div class="item-info" data-title="Мохито" data-description="799 руб / 6 шт"></div>
+		</div>
+		<div class="shop-item grid z-depth-1" style="background-image: url(../images/Cupcakes/Lemon-Meringue-Cupcake1.jpg)">
+			<div class="item-info" data-title="Лимон и меренга" data-description="799 руб / 6 шт"></div>
+		</div>
+		<div class="shop-item grid z-depth-1" style="background-image: url(../images/Cupcakes/Mojito-Cupcake1.jpg)">
+			<div class="item-info" data-title="Мохито" data-description="799 руб / 6 шт"></div>
+		</div>
 	</div>
 
 	<div class="free-space-middle"></div>
