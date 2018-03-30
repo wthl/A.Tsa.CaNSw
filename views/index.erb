@@ -93,9 +93,24 @@
 		<div class="shop-topic-left grid" id="Cakes">
 			<span>Торты</span>
 		</div>
+	
+		<a href="#modal-1" class="modal-trigger">
 		<div class="shop-item grid z-depth-1" style="background-image: url(../images/Cakes/Banana-Cake1.jpg)">
-			<div class="item-info" data-title="Банан и жижа" data-description="1599 руб / кг"></div>
+			<div class="item-info" data-title="Банан и карамель" data-description="1599 руб / кг"></div>
 		</div>
+		</a>
+		<div id="modal-1" class="modal">
+			<div class="modal-content">
+				<h2>Банан и карамель</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae magni, officiis maxime veritatis. Eveniet provident, aliquam aliquid odit pariatur! Voluptate, harum voluptas assumenda debitis illum blanditiis molestiae? Nisi dicta, illum unde et, error ab accusamus esse deserunt at ducimus enim dolorem non voluptatum fugit veritatis fugiat! Tempora dolores ipsa quam!
+				</p>
+			</div>
+			<div class="modal-footer">
+				<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+			</div>
+		</div>
+
 		<div class="shop-item grid z-depth-1" style="background-image: url(../images/Cakes/Cardamom-Carrot-Cake1.jpg)">
 			<div class="item-info" data-title="Морковь и кардамон" data-description="1599 руб / кг"></div>
 		</div>
@@ -178,6 +193,16 @@
 <script>
 	$(document).ready(function() {
 	    $('select').material_select();
+	    $('.modal').modal();
 	});
 
+// Плавный скролл по якорям
+// $(function(){
+// 	$('a[href^="#"]').click(function(){
+// 		var target = $(this).attr('href');
+// 		$('html, body').animate({scrollTop: $(target).offset().top}, 800);//800 - длительность скроллинга в мс
+// 		return false;
+// 	});
+// });
+// Конец плавного скролла
 </script>

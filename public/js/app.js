@@ -37,13 +37,13 @@ var demo = new StickyElement($('#sticky'));
 // Конец прилипающего блока
 
 // Плавный скролл по якорям
-$(function(){
-	$('a[href^="#"]').click(function(){
-		var target = $(this).attr('href');
-		$('html, body').animate({scrollTop: $(target).offset().top}, 800);//800 - длительность скроллинга в мс
-		return false;
-	});
-});
+// $(function(){
+// 	$('a[href^="#"]').click(function(){
+// 		var target = $(this).attr('href');
+// 		$('html, body').animate({scrollTop: $(target).offset().top}, 800);//800 - длительность скроллинга в мс
+// 		return false;
+// 	});
+// });
 // Конец плавного скролла
 
 //---------------------------------------------------------------------------------
