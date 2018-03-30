@@ -60,19 +60,19 @@
     	<div class="nav-shop">
 				<div class="row container center">
 					
-					<a href="#Cakes">
+					<a href="#Cakes" class="soft-scroll">
 						<div class="container col s4 m4 l2 xl2 nav-shop-section">Торты</div>
 					</a>
-					<a href="#Small-Cakes">
+					<a href="#Small-Cakes" class="soft-scroll">
 						<div class="container col s4 m4 l2 xl2 nav-shop-section">Пирожные</div>
 					</a>
-					<a href="#Cupcakes">
+					<a href="#Cupcakes" class="soft-scroll">
 			    	<div class="container col s4 m4 l2 xl2 nav-shop-section">Капкейки</div>
 			    </a>
-			    <a href="#Macarons">
+			    <a href="#Macarons" class="soft-scroll">
 						<div class="container col s4 m4 l2 xl2 nav-shop-section">Макаронс</div>
 					</a>
-					<a href="#Sweets">
+					<a href="#Sweets" class="soft-scroll">
 			    	<div class="container col s4 m4 l2 xl2 nav-shop-section">Сладости</div>
 			    </a>
 			    <a href="/cart">
@@ -99,11 +99,11 @@
 			<div class="item-info" data-title="Банан и карамель" data-description="1599 руб / кг"></div>
 		</div>
 		</a>
-		<div id="modal-1" class="modal">
+		<div id="modal-1" class="modal modal-fixed-footer">
 			<div class="modal-content">
 				<h2>Банан и карамель</h2>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae magni, officiis maxime veritatis. Eveniet provident, aliquam aliquid odit pariatur! Voluptate, harum voluptas assumenda debitis illum blanditiis molestiae? Nisi dicta, illum unde et, error ab accusamus esse deserunt at ducimus enim dolorem non voluptatum fugit veritatis fugiat! Tempora dolores ipsa quam!
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quo modi eligendi praesentium quam ipsa ipsum deserunt odit libero maxime facilis adipisci, cupiditate, repellat unde quod corporis ex necessitatibus voluptatibus magnam. Modi reprehenderit non magni recusandae voluptates, quia, quis esse cumque! Accusantium beatae amet voluptatem laboriosam aspernatur, reiciendis omnis magnam minima, dicta excepturi! Repudiandae omnis cupiditate consequuntur aperiam ab accusamus neque a alias, deleniti architecto dolores consequatur hic! Error necessitatibus consequatur unde tempore voluptates quam fugiat, odit facere atque eaque harum iste eum asperiores, et esse reprehenderit perspiciatis quis beatae. Corporis libero, blanditiis natus fuga officia quasi illo molestias esse, delectus dolor consectetur minus, voluptas mollitia nesciunt a at dolores fugit unde cum id nemo, quae impedit. Qui eaque velit mollitia, quod deserunt saepe quibusdam cum veritatis deleniti ratione consequuntur sequi molestias eum inventore enim optio asperiores earum ut voluptatem quo. Ad beatae ut architecto repellendus rem iusto earum fugiat, perferendis nam recusandae dolores asperiores repudiandae officiis ea id quos reiciendis, unde mollitia eos tenetur. Ducimus rem voluptas quam, perspiciatis, enim consequuntur harum earum deleniti incidunt laborum, asperiores fugit rerum id blanditiis est, adipisci accusamus! Deserunt corrupti, ipsum neque. Aliquam consequuntur ipsam numquam obcaecati ex tempora maxime odit, officia. Nobis?
 				</p>
 			</div>
 			<div class="modal-footer">
@@ -191,18 +191,17 @@
 <script type="text/javascript" src="/js/materialize.min.js"></script>
 
 <script>
+
 	$(document).ready(function() {
 	    $('select').material_select();
-	    $('.modal').modal();
+	    $('.modal').modal({
+	    	dismissible: true,
+	    	opacity: 0.7,
+	    	inDuration: 300,
+	    	outDuration: 300,
+	    	startingTop: '10%',
+	    	endingTop: '10%',
+	    });
 	});
 
-// Плавный скролл по якорям
-// $(function(){
-// 	$('a[href^="#"]').click(function(){
-// 		var target = $(this).attr('href');
-// 		$('html, body').animate({scrollTop: $(target).offset().top}, 800);//800 - длительность скроллинга в мс
-// 		return false;
-// 	});
-// });
-// Конец плавного скролла
 </script>
